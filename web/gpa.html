@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gpa-calculator</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto+Mono:400,700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="javascript/gpa.js"></script>
+</head>
+<body>
+	<header>
+        <div class="background" id="head">
+            <div class="ueberschrift">
+                <h1>AUBURN</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-main">
+            <ul>
+                <img src="pictures/logo.png" height="50px">
+                <li><a href="staff.html" class="nav-item">Staff</a></li>
+                <li><a href="gpa.html" class="active1">GPA</a></li>
+                <li><a href="assistant.html" class="nav-item">Assistant</a></li>
+                 <li><a href="about.html" class="nav-item">About</a></li>
+                <li><a class="nav-item" href="index.html">Home</a></li>           
+            </ul>
+    </nav>
+    <div class="break2">
+    </div>
+    <div class="form-wrap">
+        
+            <form>
+            
+                <h4>GPA Calculator</h4>
+                <input id="a" type="text" placeholder="Course 1 Grade">
+                <input id="a1" type="number" name="hours" placeholder="Course 1 Credit hours">
+                <input id="b" type="text" placeholder="Course 2 Grade">
+                <input id="b1" type="number" name="hours2" placeholder="Course 2 Credit hours">
+                <input id="c" type="text" placeholder="Course 3 Grade">
+                <input id="c1" type="number" name="hours3" placeholder="Course 3 Credit hours">
+                <input type="button" value="Calculate" onclick="gpa()">
+            
+            </form>
+
+            <textarea id="gpa" placeholder="GPA" disabled="true"></textarea>
+        
+        </div>
+    <footer>
+        <hr>
+        <p style="text-align: center;">All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
